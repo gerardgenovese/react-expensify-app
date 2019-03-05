@@ -4,11 +4,15 @@ import { startLogin } from "../redux/actions/auth";
 
 export const LoginPage = ({ startLogin }) => {
   return(
-    <div>
-      
-      <h3>Login Page</h3>
-      
-      <button onClick={startLogin}>Login</button>
+    <div className="box-layout">
+      <div className="box-layout--box">
+
+      <h1 className="box-layout--title">Expensify</h1>
+      <p>It's time to get your expenses under control</p>
+      <button className="button" onClick={startLogin}>Login with Google</button>
+      </div>
+      {/* <h3>Login Page</h3> */}
+  
     </div>
   )
 };
